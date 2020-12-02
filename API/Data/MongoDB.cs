@@ -9,15 +9,14 @@ namespace API.Data
     public class MongoDb
     {
         public IMongoDatabase Db { get; }
-
         public MongoDb(IConfiguration config)
         {
             try
             {
                 var settings = MongoClientSettings.FromUrl(new MongoUrl(config["ConnectionString"]));
                 var client = new MongoClient(settings);
-                Db = client.GetDatabase(config["Coronavirus"]);
-                MapClassses();
+                Db = client.GetDatabase(config["DatabaseName"]);
+                MapClasses();
             }
             catch (Exception ex)
             {
@@ -25,7 +24,7 @@ namespace API.Data
             }
         }
 
-        private void MapClassses()
+        private void MapClasses()
         {
             // Define que o mapping utilizara o padrão CamelCase.
             var conventionPack = new ConventionPack { new CamelCaseElementNameConvention() };
