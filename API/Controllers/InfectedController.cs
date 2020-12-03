@@ -19,7 +19,7 @@ namespace API.Controllers
 
         [HttpPost]
         // Do body da requisição nós esperamos um json com padrão dos atributos da classe InfectedDto
-        public ActionResult SaveInfected([FromBody] InfectedDto dto)
+        public IActionResult PostInfected([FromBody] InfectedDto dto)
         {
             var infected = new Infected(dto.Birthday, dto.Sex, dto.Latitude, dto.Longitude);
             _infectedCollection.InsertOne(infected);
@@ -27,7 +27,7 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public ActionResult GetInfected()
+        public IActionResult GetInfected()
         {
             var infectedList = _infectedCollection.Find(Builders<Infected>.Filter.Empty).ToList();
             return Ok(infectedList);
