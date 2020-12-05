@@ -33,11 +33,15 @@ namespace API.Controllers
             return Ok(infectedList);
         }
 
-        /*[HttpPut]
-        public IActionResult UpdateInfected([FromBody] InfectedDto dto)
+        [HttpPut]
+        public IActionResult UpdateInfected([FromForm] InfectedDto dto)
         {
-            _infectedCollection.UpdateOne(Builders<Infected>.Filter.Where( => _.Birthday == dto.Birthday), )
-            return Ok(infectedList);
-        }*/
+            
+            _infectedCollection.UpdateOne(Builders<Infected>.Filter.Where(prop => prop.Birthday == dto.Birthday),
+            // Aqui o update atualiza uma única propriedade, replace todo o documento.
+            Builders<Infected>.Update.Set("sex", dto.Sex));
+            
+            return Ok("Atualizado com sucesso!");
+        }
     }
 }
