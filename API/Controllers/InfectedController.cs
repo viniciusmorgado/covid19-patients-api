@@ -34,9 +34,8 @@ namespace API.Controllers
         }
 
         [HttpPut]
-        public IActionResult UpdateInfected([FromForm] InfectedDto dto, int Id)
+        public IActionResult UpdateInfected([FromForm] InfectedDto dto)
         {
-            
             _infectedCollection.UpdateOne(Builders<Infected>.Filter.Where(prop => prop.Birthday == dto.Birthday),
             // Aqui o update atualiza uma única propriedade, replace todo o documento.
             Builders<Infected>.Update.Set("sex", dto.Sex));
