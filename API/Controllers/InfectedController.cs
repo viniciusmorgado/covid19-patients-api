@@ -23,7 +23,7 @@ namespace API.Controllers
         {
             var infected = new Infected(dto.Birthday, dto.Sex, dto.Latitude, dto.Longitude);
             _infectedCollection.InsertOne(infected);
-            return StatusCode(201, "Infectado adicionado com sucesso");
+            return StatusCode(201, "Infectado adicionado com sucesso!");
         }
 
         [HttpGet]
@@ -34,7 +34,7 @@ namespace API.Controllers
         }
 
         [HttpPut]
-        public IActionResult UpdateInfected([FromForm] InfectedDto dto)
+        public IActionResult UpdateInfected([FromForm] InfectedDto dto, int Id)
         {
             
             _infectedCollection.UpdateOne(Builders<Infected>.Filter.Where(prop => prop.Birthday == dto.Birthday),
