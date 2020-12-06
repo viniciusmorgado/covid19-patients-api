@@ -106,3 +106,7 @@ Infectado adicionado com sucesso!
 ### Test:
 * [Postman](https://www.postman.com/) - Collaboration Platform for API Development
 * [xUnit.net](https://xunit.net/) - xUnit.net is a free, open source, community-focused unit testing tool for the .NET Framework.
+
+### Cloud:
+* [Google Cloud](https://cloud.google.com/) - Google Cloud Service.
+
