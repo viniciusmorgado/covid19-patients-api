@@ -37,4 +37,14 @@ Change API/appsettings.json property "ConnectionString":
 ```
 Using Atlas Cluster Connection String:
 
+<img src="https://github.com/viniciusmorgado/asp-mongo-api/blob/main/Assets/ClusterConnectScreenshot2020-12-06%20013338.png"></img>
+
+<img src="https://github.com/viniciusmorgado/asp-mongo-api/blob/main/Assets/ConnectScreenshot2020-12-06%20013416.png"></img>
+
+<img src="https://github.com/viniciusmorgado/asp-mongo-api/blob/main/Assets/StringScreenshot%202020-12-06%20013519.png"></img>
+
 Replace <password> with the password for the morgado user. Replace <dbname> with the name of the database that connections will use by default.
+  
+```
+mongodb+srv://morgado:S4mpl3-P4ssw0rd@cluster1.3bpkg.mongodb.net/coronavirus?retryWrites=true&w=majority
+```
