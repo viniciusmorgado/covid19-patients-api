@@ -47,3 +47,20 @@ Replace < password > with the password for the morgado user. Replace < dbname > 
 ```
 mongodb+srv://morgado:S4mpl3-P4ssw0rd@cluster1.3bpkg.mongodb.net/coronavirus?retryWrites=true&w=majority
 ```
+Like this:
+
+```
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Information",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*",
+  "__comment__": "Removed string to push on Github",
+  "ConnectionString":"mongodb+srv://morgado:S4mpl3-P4ssw0rd@cluster1.3bpkg.mongodb.net/coronavirus?retryWrites=true&w=majority",
+  "DatabaseName":"coronavirus"
+}
+```
