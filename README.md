@@ -1,6 +1,6 @@
 # Coronavirus Patients List ASP.NET Web API
 
-ASP.NET Web API with MongoDB Atlas Cluster integration, a API that receive a list of data about infected covid-19 patients, and persist this data using a cluster of three instances on MongoDB Atlas.
+ASP.NET Web API with MongoDB integrated into the Atlas Cluster, the API receives a list of data about patients infected with covid-19 and persists that data using a cluster of three instances of MongoDB Atlas on Google Cloud.
 
 <img src="https://github.com/viniciusmorgado/asp-mongo-api/blob/main/Assets/ClusterScreenshot2020-12-06%20010018.png"></img>
 
@@ -94,3 +94,15 @@ Response expected:
 Infectado adicionado com sucesso!
 ```
 
+## Built With
+
+### Back-end:
+* [ASP.NET Core with C#](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-5.0) - Open source, cross-platform Microsoft Framework for web.
+
+### Database:
+* [MongoDB](https://www.mongodb.com/) - NoSQL general purpose, document-based and distributed database.
+* [Entity Framework Core](https://docs.microsoft.com/en-us/ef/) - Entity Framework Core is a modern object-database mapper for dotNET Core.
+
+### Test:
+* [Postman](https://www.postman.com/) - Collaboration Platform for API Development
+* [xUnit.net](https://xunit.net/) - xUnit.net is a free, open source, community-focused unit testing tool for the .NET Framework.
