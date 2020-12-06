@@ -41,7 +41,7 @@ Using Atlas Cluster Connection String:
 
 <img src="https://github.com/viniciusmorgado/asp-mongo-api/blob/main/Assets/ConnectScreenshot2020-12-06%20013416.png"></img>
 
-<img src="https://github.com/viniciusmorgado/asp-mongo-api/blob/main/Assets/StringScreenshot%202020-12-06%20013519.png"></img>
+<img src="https://github.com/viniciusmorgado/asp-mongo-api/blob/main/Assets/StrintConnection.png"></img>
 
 Replace < password > with the password for the morgado user. Replace < dbname > with the name of the database that connections will use by default.  
 ```
