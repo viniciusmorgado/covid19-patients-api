@@ -4,7 +4,7 @@ ASP.NET Web API with MongoDB Atlas Cluster integration, a API that receive a lis
 
 <img src="https://github.com/viniciusmorgado/asp-mongo-api/blob/main/Assets/ClusterScreenshot2020-12-06%20010018.png"></img>
 
-## Install
+## Installation
 ```
 git clone https://github.com/viniciusmorgado/asp-mongo-api.git
 ```
@@ -64,3 +64,32 @@ Like this:
   "DatabaseName":"coronavirus"
 }
 ```
+## Run API
+
+```
+cd API
+```
+```
+donet run
+```
+<img src="RunningScreenshot 2020-12-06 015054.png"></img>
+
+On [Postman](https://www.postman.com/), run a sample of POST using a localhost path and port with route to infected controller for add a inffected covid-19 patient:
+
+```
+http://localhost:5000/infected
+```
+```
+{
+	"birthday": "1999-09-28",
+    "sex": "F",
+	"latitude": -23.5630994,
+	"longitude": -46.6565712
+}
+```
+Response
+```
+Infectado adicionado com sucesso!
+```
+<img src="RunningScreenshot 2020-12-06 015054.png"></img>
+
