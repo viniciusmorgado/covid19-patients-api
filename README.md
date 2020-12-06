@@ -72,9 +72,9 @@ cd API
 ```
 donet run
 ```
-<img src="RunningScreenshot 2020-12-06 015054.png"></img>
+<img src="https://github.com/viniciusmorgado/asp-mongo-api/blob/main/Assets/RunningScreenshot%202020-12-06%20015054.png"></img>
 
-On [Postman](https://www.postman.com/), run a sample of POST using a localhost path and port with route to infected controller for add a inffected covid-19 patient:
+On [Postman](https://www.postman.com/), run a sample of POST using a localhost path and port with route to infected controller for add a infected covid-19 patient:
 
 ```
 http://localhost:5000/infected
@@ -82,14 +82,15 @@ http://localhost:5000/infected
 ```
 {
 	"birthday": "1999-09-28",
-    "sex": "F",
+    	"sex": "F",
 	"latitude": -23.5630994,
 	"longitude": -46.6565712
 }
 ```
-Response
+<img src="https://github.com/viniciusmorgado/asp-mongo-api/blob/main/Assets/PostmanScreenshot%202020-12-06%20015926.png"></img>
+
+Response expected:
 ```
 Infectado adicionado com sucesso!
 ```
-<img src="RunningScreenshot 2020-12-06 015054.png"></img>
 
