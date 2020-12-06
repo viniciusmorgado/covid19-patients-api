@@ -104,7 +104,7 @@ Infectado adicionado com sucesso!
 * [Entity Framework Core](https://docs.microsoft.com/en-us/ef/) - Entity Framework Core is a modern object-database mapper for dotNET Core.
 
 ### Test:
-* [Postman](https://www.postman.com/) - Collaboration Platform for API Development
+* [Postman](https://www.postman.com/) - Collaboration Platform for API Development.
 * [xUnit.net](https://xunit.net/) - xUnit.net is a free, open source, community-focused unit testing tool for the .NET Framework.
 
 ### Cloud:
